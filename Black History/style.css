@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Inspiration&family=Passions+Conflict&display=swap");
+:root {
+	--dm: "DM Sans", sans-serif;
+	--passion: "Passions Conflict", cursive;
+	--inspiration: "Inspiration", cursive;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+body::-webkit-scrollbar {
+	display: none;
+}
+body {
+	background-color: #dfd8f2;
+	min-width: 100%;
+	min-height: 100vh;
+	font-family: var(--dm);
+	color: #8f6fee;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	font-family: var(--dm);
+}
+.full-contant {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	margin: 0 auto;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+}
+
+.input-search-box {
+	border-top-style: hidden;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	border-bottom-style: groove;
+	outline: none;
+	background-color: #dfd8f2;
+	width: 13em;
+	font-size: 2em;
+	padding-left: 1em;
+}
+.heading {
+	color: #8f6fee;
+	font-weight: 400px;
+	font-style: normal;
+	font-family: var(--inspiration);
+	font-size: 4em;
+	width: 100%;
+}
+.logo {
+	width: 7em;
+}
+.header-container {
+	width: 35%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1em;
+	position: relative;
+	top: 4em;
+	left: 7em;
+	width: 100%;
+}
+.search-data-container {
+	display: flex;
+	flex-flow: column;
+	position: relative;
+	top: 7em;
+	left: 22em;
+	gap: 2em;
+	width: 50%;
+}
+.search-head-line {
+	font-size: 3.5em;
+	font-family: var(--dm);
+}
+.buttons-container {
+	position: relative;
+	display: flex;
+	flex-flow: row;
+	gap: 2em;
+	left: 26em;
+}
+.searching-head-input {
+	display: flex;
+	flex-flow: row;
+}
+.btn {
+	border: 1px solid black;
+	padding: 1em;
+	background-color: #dfd8f2;
+	transition: background-color 1s;
+}
+.btn:hover {
+	cursor: pointer;
+	background-color: #8f6fee;
+	color: aliceblue;
+}
+.sec-2 {
+	display: flex;
+	position: absolute;
+	top: 30em;
+	left: 23em;
+	flex-flow: column wrap;
+	gap: 3em;
+}
+.response-data {
+	display: flex;
+	flex-flow: column wrap;
+	gap: 1em;
+	width: 73%;
+}
+
+.res-data {
+	color: black;
+}
+.Data-list {
+	color: black;
+}
+.name-data {
+	color: aqua;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+	.sec-2 {
+		left: 2em;
+		font-size: 0.6em;
+	}
+	.heading {
+		left: -2em;
+		position: absolute;
+		font-size: 3em;
+	}
+	.search-head-line {
+		font-size: 1.5em;
+	}
+	.search-data-container {
+		left: 1em;
+	}
+	.input-search-box {
+		width: 6em;
+	}
+	.btn {
+		width: 6em;
+		height: 2em;
+		width: 154px;
+		text-align: center;
+		padding: 0;
+	}
+	.buttons-container {
+		left: 2em;
+		width: 16em;
+	}
+}
+@media (min-width: 425px) and (max-width: 800px) {
+	.sec-2 {
+		left: 2em;
+		font-size: 0.6em;
+	}
+	.heading {
+		left: -2em;
+		position: absolute;
+		font-size: 3em;
+	}
+	.search-head-line {
+		font-size: 1.5em;
+	}
+	.search-data-container {
+		left: 1em;
+	}
+	.input-search-box {
+		width: 6em;
+	}
+	.btn {
+		width: 6em;
+		height: 2em;
+		width: 154px;
+		text-align: center;
+		padding: 0;
+	}
+	.buttons-container {
+		left: 2em;
+		width: 16em;
+	}
+}
